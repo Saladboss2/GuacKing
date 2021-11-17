@@ -10,8 +10,8 @@ const capitalize = (text) => text.charAt(0).toUpperCase() + text.slice(1);
             }
         }),
         price = ({
-            aquatic: 1,
-            bot: 1,
+            aquatic: 0,
+            bot: 0,
             space: 1,
             breakfast: 1,
             medieval: 1,
