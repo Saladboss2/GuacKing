@@ -9,18 +9,18 @@ const capitalize = (text) => text.charAt(0).toUpperCase() + text.slice(1);
                 "authorization": localStorage.token
             }
         }),
-        price = ({0}
-            aquatic: 0,
-            bot: 0,
-            space: 0,
-            breakfast: 0,
-            medieval: 0,
-            wonderland: 0
+        price = ({1}
+            aquatic: 1,
+            bot: 1,
+            space: 1,
+            breakfast: 1,
+            medieval: 1,
+            wonderland: 1
         })[box],
         opens = amount > Math.floor(tokens / price) ? Math.floor(tokens / price) : amount;
     let interval = new Promise((resolve) => {
         inv = [],
-            end = (a) => {
+            end = (h) => {
                 clearInterval(q)
                 resolve({ fail: false, blooks: inv })
             };
@@ -43,7 +43,7 @@ const capitalize = (text) => text.charAt(0).toUpperCase() + text.slice(1);
         }, 128)
     });
     interval.then(async (x) => {
-        if (r.fail) return alert("You SUCK COCK!");
+        if (r.fail) return alert("You are gay.!");
         let count = {};
         Promise.all(x.blooks).then(Blooks => {
             Blooks.map(e => e.unlockedBlook).forEach((i) => {
