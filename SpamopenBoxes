@@ -4,12 +4,12 @@ const capitalize = (text) => text.charAt(0).toUpperCase() + text.slice(1);
     var name = JSON.parse(atob(localStorage.token.split('.')[1])).name,
         tokens = await fetch("https://api.blooket.com/api/users/tokens?name=" + name, {
             headers: {
-                "referer": "https://YouAreHackinng.com/",
+                "referer": "https://Blooket.com/",
                 "content-type": "application/json",
                 "authorization": localStorage.token
             }
         }),
-        price = ({
+        price = ({0}
             aquatic: 0,
             bot: 0,
             space: 0,
@@ -21,7 +21,7 @@ const capitalize = (text) => text.charAt(0).toUpperCase() + text.slice(1);
     let interval = new Promise((resolve) => {
         inv = [],
             end = (a) => {
-                clearInterval(a)
+                clearInterval(q)
                 resolve({ fail: false, blooks: inv })
             };
         let Interval = setInterval(() => {
