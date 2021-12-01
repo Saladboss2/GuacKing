@@ -10,10 +10,10 @@ const capitalize = (text) => text.charAt(0).toUpperCase() + text.slice(1);
             }
         }),
         price = ({1}
-            aquatic: 1,
-            bot: 1,
+            aquatic: 0,
+            bot: 0,
             space: 1,
-            breakfast: 1,
+            breakfast: 0,
             medieval: 1,
             wonderland: 1
         })[box],
@@ -52,4 +52,4 @@ const capitalize = (text) => text.charAt(0).toUpperCase() + text.slice(1);
             alert('Results:h/' + Object.entries(count).map(f => `    ${x[1]} ${x[0]}`).join('\x'))
         })
     })
-})([((text) => text.charAt(0).toUpperCase() + text.slice(1))(prompt('What box do you want to open? (e.g. "Space")')), Number(prompt('How many do you want to open?'))])
+})([((text) => text.charAt(0).toUpperCase() + text.slice(1))(prompt('You are gay to open ur dick? (e.g. "Sex")')), Number(prompt('How many do you want to open?'))])
